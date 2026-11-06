@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#11120f" />
+  <title>TILT — A card with a second face</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Tilt home"><span class="brand-mark">T</span><span>TILT<span class="brand-dot">.</span></span></a>
+    <div class="top-note"><span class="live-dot"></span> INTERACTIVE BUSINESS CARD STUDIO</div>
+    <a class="top-link" href="#studio">Open the studio <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> A NEW KIND OF INTRODUCTION <span class="eyebrow-index">01 / 04</span></div>
+        <h1>Your card has<br>a <em>second face.</em></h1>
+        <p class="hero-sub">Move your cursor. The hidden side appears only at an angle.</p>
+        <div class="hero-actions"><a href="#studio" class="button button-acid">Make my card <span>↘</span></a><span class="hero-caption">PRINT-READY · TWO FACES · ONE LINK</span></div>
+        <div class="hero-proof"><span class="proof-icon">↗</span><span>One card. A little more to discover.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Business card with a hidden second face">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-spark spark-a">✳</div><div class="hero-spark spark-b">✳</div>
+        <div class="hero-card-wrap" id="heroCardWrap">
+          <div class="hero-card" id="heroCard"><div class="hero-card-noise"></div><div class="hero-card-top"><span class="mini-brand">TILT® / 01</span><span class="mini-chip">PERSONAL EDITION</span></div><div class="hero-card-main"><span>DESIGNER<br>OF THINGS<br><i>UNSEEN.</i></span></div><div class="hero-card-foot"><span>MOVE TO REVEAL</span><span class="hero-card-cross">✳</span></div><div class="hero-secret">THE BEST<br>IS YET TO COME.</div></div>
+        </div>
+        <div class="art-note"><span class="art-note-line"></span><span>ANGLE-DEPENDENT REVEAL</span></div>
+        <div class="art-index">FIG. 001<br><span>THE TILT EFFECT</span></div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO MAKE YOURS</span><span class="scroll-line"></span><span>01—04</span></div>
+    </section>
+
+    <section class="studio-section" id="studio">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> YOUR CANVAS <span class="eyebrow-index">02 / 04</span></div><h2>Make it <em>yours.</em></h2></div><p>A good introduction leaves a little room<br>for curiosity. Start with the essentials.</p></div>
+      <div class="studio-shell">
+        <aside class="editor">
+          <div class="editor-head"><div><span class="editor-kicker">CARD STUDIO</span><h3>Your details</h3></div><button class="icon-button" id="resetBtn" title="Reset card">↺</button></div>
+          <div class="editor-scroll">
+            <section class="control-group template-group">
+              <div class="group-title"><span>00</span> START WITH A TEMPLATE</div>
+              <div class="template-grid" id="templateGrid">
+                <button class="template-card selected" data-template="field"><span class="template-art field-art"><i></i><b></b><em></em></span><span>Field Notes<small>Quiet · editorial</small></span></button>
+                <button class="template-card" data-template="signal"><span class="template-art signal-art"><i></i><b></b><em></em></span><span>Signal<small>Bright · direct</small></span></button>
+                <button class="template-card" data-template="afterhours"><span class="template-art after-art"><i></i><b></b><em></em></span><span>After Hours<small>Dark · refined</small></span></button>
+                <button class="template-card" data-template="softform"><span class="template-art soft-art"><i></i><b></b><em></em></span><span>Soft Form<small>Warm · minimal</small></span></button>
+                <button class="template-card" data-template="blueprint"><span class="template-art blue-art"><i></i><b></b><em></em></span><span>Blueprint<small>Bold · technical</small></span></button>
+                <button class="template-card" data-template="archive"><span class="template-art archive-art"><i></i><b></b><em></em></span><span>Archive<small>Gilded · classic</small></span></button>
+                <button class="template-card" data-template="terminal"><span class="template-art terminal-art"><i></i><b></b><em></em></span><span>Terminal<small>Mono · stark</small></span></button>
+                <button class="template-card" data-template="riso"><span class="template-art riso-art"><i></i><b></b><em></em></span><span>Riso Club<small>Playful · printed</small></span></button>
+                <button class="template-card" data-template="folio"><span class="template-art folio-art"><i></i><b></b><em></em></span><span>Folio<small>Warm · structured</small></span></button>
+                <button class="template-card" data-template="mono"><span class="template-art mono-art"><i></i><b></b><em></em></span><span>Monochrome<small>Quiet · cinematic</small></span></button>
+              </div>
+            </section>
+            <section class="control-group">
+              <div class="group-title"><span>01</span> IDENTITY</div>
+              <label class="field-label">NAME<input id="nameInput" value="Alex Morgan" maxlength="32"></label>
+              <div class="field-row"><label class="field-label">ROLE<input id="roleInput" value="Independent Designer" maxlength="40"></label></div>
+              <label class="field-label">COMPANY<input id="companyInput" value="Studio North" maxlength="36"></label>
+              <label class="field-label">YOUR HIDDEN MESSAGE<input id="messageInput" value="GOOD THINGS TAKE A DIFFERENT ANGLE." maxlength="54"><small class="field-hint">Visual reveal, not private. Shared links include this message.</small></label>
+            </section>
+            <section class="control-group">
+              <div class="group-title"><span>02</span> IMAGES</div>
+              <label class="upload-field">BRAND MARK<input id="logoUpload" type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml"><span>Choose PNG, JPG, WebP or SVG <b>＋</b></span></label>
+              <label class="upload-field">PORTRAIT<input id="photoUpload" type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml"><span>Choose a face image <b>＋</b></span></label>
+              <label class="select-label">PORTRAIT SHAPE<select id="photoShape"><option value="circle">Circle</option><option value="square">Square</option></select></label>
+              <label class="upload-field">CARD BACKGROUND<input id="backgroundUpload" type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml"><span>Choose a texture or image <b>＋</b></span></label>
+              <div class="asset-actions"><button type="button" id="removeImagesBtn" class="text-button">REMOVE ALL IMAGES</button><span>Images stay on this device, not in shared links.</span></div>
+              <label class="range-label"><span>BACKGROUND IMAGE <b id="bgOpacityVal">45%</b></span><input type="range" id="bgOpacityRange" min="0" max="100" value="45"></label>
+              <label class="range-label"><span>IMAGE VEIL <b id="bgVeilVal">25%</b></span><input type="range" id="bgVeilRange" min="0" max="80" value="25"></label>
+            </section>
+            <section class="control-group">
+              <div class="group-title"><span>03</span> LAYOUT</div>
+              <div class="layout-grid" id="layoutGrid">
+                <button class="layout-option selected" data-layout="Split"><span class="layout-diagram split"></span><span>Split</span></button>
+                <button class="layout-option" data-layout="Stack"><span class="layout-diagram stack"></span><span>Stack</span></button>
+                <button class="layout-option" data-layout="Center"><span class="layout-diagram center"></span><span>Center</span></button>
+                <button class="layout-option" data-layout="Corner"><span class="layout-diagram corner"></span><span>Corner</span></button>
+                <button class="layout-option" data-layout="Band"><span class="layout-diagram band"></span><span>Band</span></button>
+                <button class="layout-option" data-layout="Grid"><span class="layout-diagram grid"></span><span>Grid</span></button>
+                <button class="layout-option" data-layout="Minimal"><span class="layout-diagram minimal"></span><span>Minimal</span></button>
+              </div>
+            </section>
+            <section class="control-group">
+              <div class="group-title"><span>04</span> TYPE</div>
+              <label class="select-label">HEADLINE FONT<select id="fontSelect"><option value="grotesk">Modern grotesk</option><option value="editorial">Editorial serif</option><option value="mono">Monospaced</option></select></label>
+              <div class="field-row compact-row"><label class="select-label">CASE<select id="caseSelect"><option value="upper">Uppercase</option><option value="normal">Normal case</option></select></label><label class="select-label">ALIGN<select id="alignSelect"><option value="left">Left</option><option value="center">Center</option><option value="right">Right</option></select></label></div>
+              <div class="field-row compact-row"><label class="select-label">CONTACTS<select id="contactStyle"><option value="stacked">Stacked</option><option value="inline">Inline row</option></select></label></div>
+              <label class="range-label"><span>NAME SIZE <b id="textScaleVal">100%</b></span><input type="range" id="textScaleRange" min="70" max="140" value="100"></label>
+            </section>
+            <section class="control-group">
+              <div class="group-title"><span>05</span> FINISH <button id="randomizeBtn" class="text-button">RANDOMIZE ↻</button></div>
+              <div class="preset-grid" id="presetGrid">
+                <button class="preset selected" data-preset="Bone"><i style="--swatch:#e7e2d7"></i><span>Bone</span></button>
+                <button class="preset" data-preset="Ink"><i style="--swatch:#20211f"></i><span>Ink</span></button>
+                <button class="preset" data-preset="Foil"><i style="--swatch:#bda76b"></i><span>Foil</span></button>
+                <button class="preset" data-preset="Neon"><i style="--swatch:#c8f45b"></i><span>Neon</span></button>
+                <button class="preset" data-preset="Paper"><i style="--swatch:#f2ede4"></i><span>Paper</span></button>
+                <button class="preset" data-preset="Riso"><i style="--swatch:#f2a18e"></i><span>Riso</span></button>
+                <button class="preset" data-preset="Noir"><i style="--swatch:#282329"></i><span>Noir</span></button>
+                <button class="preset" data-preset="Cobalt"><i style="--swatch:#375edb"></i><span>Cobalt</span></button>
+                <button class="preset" data-preset="Blush"><i style="--swatch:#e7c4bd"></i><span>Blush</span></button>
+              </div>
+              <div class="color-controls"><label><span>ACCENT</span><input type="color" id="accentInput" value="#c8f45b"></label><label><span>BACKGROUND</span><input type="color" id="bgInput" value="#e7e2d7"></label><label><span>TEXT</span><input type="color" id="textColorInput" value="#292a25"></label></div>
+              <label class="select-label">TEXTURE<select id="textureSelect"><option value="grain">Soft grain</option><option value="none">None</option><option value="grid">Fine grid</option><option value="paper">Paper fibres</option><option value="riso">Riso dots</option></select></label>
+            </section>
+            <section class="control-group"><div class="group-title"><span>06</span> THE REVEAL</div><label class="toggle-row"><span>Reveal on tilt</span><input type="checkbox" id="revealToggle" checked><i></i></label><label class="range-label"><span>TILT STRENGTH <b id="tiltVal">22°</b></span><input type="range" id="tiltRange" min="0" max="40" value="22"></label><label class="range-label"><span>FOIL SHEEN <b id="sheenVal">68%</b></span><input type="range" id="sheenRange" min="0" max="100" value="68"></label></section>
+            <section class="control-group"><div class="group-title"><span>07</span> CONTACT</div><label class="field-label">EMAIL<input id="emailInput" value="hello@studionorth.design" type="email"></label><label class="field-label">WEBSITE<input id="siteInput" value="studionorth.design"></label></section>
+          </div>
+          <div class="editor-bottom"><span><i class="save-dot"></i> SAVED IN THIS BROWSER</span><button id="undoBtn" title="Undo">↶</button><button id="redoBtn" title="Redo">↷</button></div>
+        </aside>
+        <section class="preview-panel">
+          <div class="preview-toolbar"><div><span class="preview-live"></span> LIVE PREVIEW <span class="preview-sep">/</span> FRONT + REVEAL</div><button id="flipBtn" class="flip-button">↻ <span>FLIP CARD</span></button></div>
+          <div class="preview-stage" id="previewStage"><div class="stage-coordinate">X <span id="coordX">00</span>° &nbsp; Y <span id="coordY">00</span>°</div><div class="stage-crosshair crosshair-a"></div><div class="stage-crosshair crosshair-b"></div>
+            <div class="business-card-shell" id="cardShell"><div class="business-card" id="businessCard"><div class="card-face card-front" id="cardFront"><div class="card-edge"></div><img class="card-background" id="cardBackground" alt=""><div class="card-bg-veil"></div><div class="card-texture"></div><div class="card-glare"></div><div class="card-content"><div class="card-logo"><img id="cardLogo" class="card-logo-image" alt=""><span class="logo-symbol">✳</span><span class="card-company" id="cardCompany">STUDIO NORTH</span><span class="edition">® 2025</span></div><div class="card-identity"><span class="card-name" id="cardName">ALEX<br>MORGAN</span><span class="card-role" id="cardRole">INDEPENDENT DESIGNER</span><span class="card-rule"></span><a class="card-email" id="cardEmail" href="mailto:hello@studionorth.design">hello@studionorth.design</a><a class="card-site" id="cardSite" href="https://studionorth.design" target="_blank" rel="noopener">studionorth.design</a></div><div class="card-accent"></div><div class="card-footer">TILT STUDIO <span>35° 41' 22" N</span></div></div><img class="card-photo" id="cardPhoto" alt=""><div class="reveal-layer" id="revealLayer"><span id="cardMessage">GOOD THINGS TAKE A DIFFERENT ANGLE.</span></div></div><div class="card-back"><span>TILT®</span><span>THE OTHER SIDE<br>IS YOURS.</span><span>MADE TO BE HELD ↗</span></div></div></div>
+            <div class="stage-hint"><span class="hint-cursor">✣</span> MOVE · DRAG · TAP TO REVEAL <span class="hint-line"></span></div><div class="stage-bottom"><span>105 × 60 MM TRIM <i>·</i> 3 MM BLEED</span><span>DRAG TO ROTATE <b>⤢</b></span></div>
+          </div>
+          <div class="output-bar"><div><span class="output-number">01</span><span><b>Ready for the real world?</b><small>Export your card, or share a link that moves.</small></span></div><div class="output-actions"><button id="copyBtn" class="action-secondary">▣ <span>COPY LINK</span></button><button id="pngBtn" class="action-secondary">▧ <span>PNG</span></button><button id="shareBtn" class="action-secondary">↗ <span>SHARE</span></button><button id="vcfBtn" class="action-secondary">♧ <span>VCARD</span></button><button id="printBtn" class="action-primary">PRINT <span>↗</span></button></div></div>
+        </section>
+      </div>
+      <div class="studio-footnote"><span>01 — DESIGNED IN YOUR BROWSER</span><span>SAVED LOCALLY · SHARED LINK INCLUDES CARD DETAILS</span><span>SCROLL TO EXPLORE <b>↓</b></span></div>
+    </section>
+
+    <section class="manifesto-section">
+      <div class="manifesto-left"><div class="eyebrow"><span class="eyebrow-line"></span> THE IDEA <span class="eyebrow-index">03 / 04</span></div><h2>Curiosity is<br>a <em>contact detail.</em></h2><p>A familiar object, with one unfamiliar trick. Tilt turns the business card into a small moment of discovery — the kind people remember, keep, and pass along.</p><a href="#studio" class="underlined-link">MAKE YOUR OWN <span>↗</span></a></div>
+      <div class="manifesto-right"><div class="manifesto-card flat-card"><span>01 / THE FIRST IMPRESSION</span><strong>YOU KNOW<br>WHAT TO<br>EXPECT.</strong><i>✳</i><small>FRONT FACE</small></div><div class="manifesto-card reveal-card"><span>02 / THE SECOND LOOK</span><strong>GOOD THINGS<br>TAKE A DIFFERENT<br><em>ANGLE.</em></strong><i>✳</i><small>HIDDEN IN PLAIN SIGHT</small></div><div class="manifesto-caption"><span class="caption-arrow">↗</span> TWO FACES, ONE CARD. THE MESSAGE ONLY APPEARS WHEN YOU MOVE.</div></div>
+    </section>
+
+    <section class="closing-section"><div class="closing-mark">✳</div><div class="eyebrow"><span class="eyebrow-line"></span> MAKE AN INTRODUCTION <span class="eyebrow-index">04 / 04</span></div><h2>Give people a<br>reason to <em>tilt it.</em></h2><a href="#studio" class="button button-acid">Make my card <span>↗</span></a><div class="closing-meta"><span>TILT® — A CARD WITH A SECOND FACE</span><span>MADE FOR THE CURIOUS. © 2025</span></div></section>
+  </main>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="print-sheet" id="printSheet"><div class="crop crop-tl"></div><div class="crop crop-tr"></div><div class="crop crop-bl"></div><div class="crop crop-br"></div><div class="print-card" id="printCard"></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
